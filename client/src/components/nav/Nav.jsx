@@ -29,7 +29,7 @@ const Nav = () => {
         </input> 
        <button className='boton'>Search</button> 
         </form>
-        
+
     </div>
   )
 }

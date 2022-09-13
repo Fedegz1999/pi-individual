@@ -31,7 +31,7 @@ router.get('/', async (req, res, next) => {
     await Promise.all(promises)//guardo la promesa de arriba en el promise.all
     if (!name) { //si no le paso un nombre por query
         let allCountries = await Country.findAll() //devuelve todos
-        res.send(allCountries);
+        res.status(200).send(allCountries);
     } else {  // si le paso un query -> devuelve el que le pase y los similares
         try{   
         let searchCountry = await Country.findAll({        
@@ -45,7 +45,7 @@ router.get('/', async (req, res, next) => {
             } 
         })
         if (searchCountry.length){ //si tiene un largo < 0
-            res.send(searchCountry) //lo traigo
+            res.status(200).send(searchCountry) //lo traigo
         } else {
             res.send({message: 'Country not found'}) //si no tiro el error
         }

@@ -67,7 +67,7 @@ function Country(props){
             })
         }
             </div >
-            <Paginado className='flechas' pagina={pagina} setPagina={setPagina} max={max || paises.length - 1 || paises.length }></Paginado>
+            <Paginado className='flechas' pagina={pagina} setPagina={setPagina} max={max || paises.length - 1 || paises.length  }></Paginado>
         
         </div>
     )
