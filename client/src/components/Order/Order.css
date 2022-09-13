@@ -1,0 +1,8 @@
+.botones{
+        position: absolute;
+          top: 90px;
+          display: flex;
+    justify-content: center;
+    left: 46%;
+
+    }

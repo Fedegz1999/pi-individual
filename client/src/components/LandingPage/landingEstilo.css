@@ -1,0 +1,40 @@
+.landingContainer {
+    height: 100vh;
+    width: 100%;
+    object-fit: contain;
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0,6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.video {
+    object-fit: cover;
+    width: 100%;
+    height: 100vh;
+    position: center;
+    z-index: -1;
+}
+
+
+    .landingContainer > p {
+        box-sizing: content-box;
+        color: black;
+        font-size: 100px;
+        position: absolute;
+        height: 100%;
+        }
+
+    .BOTON {
+        color:rgb(7, 7, 7);
+        border-color: rgb(93, 107, 107);
+        background-color: transparent;
+        font-size: 32px;
+        height: 10%;
+        box-sizing: content-box;
+        position: absolute;
+          top: 110px;
+          border-bottom: 1
+          
+    }

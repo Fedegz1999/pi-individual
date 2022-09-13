@@ -1,0 +1,90 @@
+.a {  
+        margin-top: 50px;
+        margin-bottom: 50px;
+        display: flex;
+        justify-content: space-around;
+        background-color: rgb(192, 188, 181);
+        flex-direction:column;
+        border-radius: 15px;
+        width: 900px;
+        height: max-content;
+        border: 6px solid rgb(70, 161, 28);
+        
+        backdrop-filter: blur(7px);
+        
+        position: absolute;
+          top: 160px;
+          display: flex;
+    
+}
+
+.En {
+    position: absolute;
+          top: 90px;
+          display: flex;
+    justify-content: center;
+    left: 58%;
+    background-color: rgb(226, 0, 188);
+    border-color: rgb(236, 24, 165);
+    }
+
+    .En:hover {
+        transform: scale(1);
+    opacity: 0.7;
+
+}
+
+
+.titulo{
+    color: rgb(255, 255, 255);
+    width: 80%;
+    left: 46%;
+    width: 50px;
+    right: 50%;
+    position: absolute;
+          top: 90px;
+          display: flex;
+    
+    
+}
+
+
+.activitiesContainer {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0,6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+
+.CO {
+    position: absolute;
+          top: 90px;
+          display: flex;
+    justify-content: center;
+    left: 35%;
+    background-color: rgb(26, 226, 0);
+    border-color: rgb(24, 236, 24);
+    }
+
+    .CO:hover {
+        transform: scale(1);
+    opacity: 0.7;
+    }
+
+.img {
+    height: 100%;
+    width: 100%;
+    object-fit: contain;
+    box-shadow: 0 0 0 1000px rgba(0, 0, 0, 0,6);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+
+}
