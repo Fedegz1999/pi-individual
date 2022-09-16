@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom'
-import React, { useEffect } from 'react'
 import './countryCard.css'
 
 const CountryCard = ({name, continent, img, id, population }) => {

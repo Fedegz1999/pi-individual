@@ -1,6 +1,6 @@
 import React from 'react'
-import {orderedCountries, getCountries} from '../../redux/actions'
-import { useDispatch, useSelector } from 'react-redux';
+import {orderedCountries} from '../../redux/actions'
+import { useDispatch } from 'react-redux';
 import './Order.css'
 
 

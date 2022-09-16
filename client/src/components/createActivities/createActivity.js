@@ -1,5 +1,5 @@
 import { useState} from 'react'
-import { useDispatch, useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import { createActivity, getActivities } from '../../redux/actions';
 import { useHistory } from 'react-router-dom';
 

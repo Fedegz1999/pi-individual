@@ -3,8 +3,7 @@ import { useSelector, useDispatch } from 'react-redux';
 import { getCountries } from '../../redux/actions';
 import { useForm } from './createActivity';
 import './createActivities.css'
-import video from '../media/videoForm.mp4';
-import { Link } from 'react-router-dom';
+
     
     const initialForm = {
         name: "",
@@ -27,12 +26,13 @@ import { Link } from 'react-router-dom';
             errors.difficulty = "Difficulty's duration is required"
         } else if (!form.duration){
             errors.duration = "Activity's duration is required"
-        } else if (form.season === "Select"){
+        } else if (form.season === "Select a season"){
             errors.season = "Activity's season is required"
         }
          
         return errors;
     }
+
 
 
     function CreateActivity() {   
@@ -106,6 +106,21 @@ import { Link } from 'react-router-dom';
                                     <option value="2:30 hr">2:30 hr</option>
                                     <option value="3 hr">3 hr</option>
                                     <option value="3:30 hr">3:30 hr</option>
+                                    <option value="4 hr">4:00 hr</option>
+                                    <option value="4:30 hr">4:30 hr</option>
+                                    <option value="5:00 hr">5:00 hr</option>
+                                    <option value="5:30 hr">5:30 hr</option>
+                                    <option value="6:00 hr">6:00 hr</option>
+                                    <option value="6:30 hr">6:30 hr</option>
+                                    <option value="7:00 hr">7:00 hr</option>
+                                    <option value="7:30 hr">7:30 hr</option>
+                                    <option value="8:00 hr">8:00 hr</option>
+                                    <option value="8:30 hr">8:30 hr</option>
+                                    <option value="9:00 hr">9:00 hr</option>
+                                    <option value="9:30 hr">9:30 hr</option>
+                                    <option value="10:00 hr">10:00 hr</option>
+                                    
+
                                 </select>
                     </div>
                     {errors.duration && <p className='Errors'>⛔ {errors.duration}</p>}
@@ -132,7 +147,6 @@ import { Link } from 'react-router-dom';
                     <div className='Inputs'>
                         <label>Country: </label>              
                                 <select className='IInputs' onChange={(e) => handleSelect(e)}>
-                                    <option>Countries</option>
                                     {countries?.map((c) => {
                                     return(
                                         <option size="20" key={c.id} name ={c.name} onBlur={handleBlur} >{c.name}</option>

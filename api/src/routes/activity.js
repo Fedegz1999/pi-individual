@@ -61,19 +61,5 @@ router.post('/create', async (req, res, next) => {
     }
 })
 
-router.delete('/:id', async (req, res, next) =>{
-    const id = req.params.id   
-    try {
-        let deleted = await Activity.destroy({
-            where: {
-                id:id
-            }
-        });
-        return res.send('Activity succesful deleted')       
-        
-    } catch (err) {
-        next(err)
-    }
-}) 
 
 module.exports = router;

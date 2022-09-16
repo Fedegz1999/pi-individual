@@ -1,7 +1,6 @@
 import { useDispatch, useSelector } from 'react-redux'
-import { filterActivities, getActivities, deleteActivity } from '../../redux/actions'
-import React, {useEffect, useState} from 'react'
-import CountryCard from '../countryCard/CountryCard'
+import { getActivities } from '../../redux/actions'
+import React, {useEffect} from 'react'
 import { Link } from 'react-router-dom'
 import './Activities.css'
 import imagen from '../media/Countries.jpg';

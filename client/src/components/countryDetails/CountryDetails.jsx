@@ -1,8 +1,8 @@
 import React, { useEffect } from 'react'
 import { useSelector, useDispatch } from 'react-redux'
-import { getCountryDetail, GET_ACTIVITIES } from '../../redux/actions'
+import { getCountryDetail } from '../../redux/actions'
 import './countryDetails.css'
-import imagen from '../media/countrydetails.jpg';
+
 
 function CountryDetails(props) {
 let url = props.match.params.id;
@@ -78,7 +78,8 @@ let coincidencias = detail.activities
                                   <p>Difficulty: {act.difficulty}</p> 
                                   <p>Duration: {act.duration}</p> 
                                   <p>Season: {act.season}</p> 
-                                   </p>
+                                  <hr className='hr' />
+                                  </p>
                                     )                                                                                                     
                                                              
             }

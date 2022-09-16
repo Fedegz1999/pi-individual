@@ -5,7 +5,6 @@ import Country from './components/countries/countries';
 import CountryDetails from './components/countryDetails/CountryDetails';
 import Activities from './components/activities/Activities';
 import createActivities from './components/createActivities/createActivities.jsx';
-import { Link } from 'react-router-dom';
 
 function App() {
   return (

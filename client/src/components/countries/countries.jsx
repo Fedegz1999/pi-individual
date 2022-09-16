@@ -43,7 +43,7 @@ function Country(props){
     
     return (
         <div className='countriesContainer'>
-            <img src={imagen} alt="!" />       
+            <img src={imagen} alt="!" className='imga'/>       
             <Nav/>
             <Link to = {'/activities'}> <button className='ACT'> ACTIVITIES </button> </Link>
           
