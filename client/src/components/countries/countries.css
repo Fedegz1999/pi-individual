@@ -21,13 +21,10 @@ position:fixed;
 
     .cards{
         box-sizing: content-box;
-        padding-top: 50px;
-        font-size: 26px;
         color: white;  
         display: grid;
         grid-template-columns: repeat(3, 1fr);
         grid-template-rows: repeat(3, 1fr);
-        grid-column-gap: 10px;
         grid-row-gap: 5px;   
         padding-left: 5%;
         padding-bottom: 150px;

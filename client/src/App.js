@@ -15,7 +15,7 @@ function App() {
        
        <Route exact path='/activities/create'  component={createActivities}/>
        <Route exact path='/countries'  component={Country}/>
-       <Route exact path='/countries/:id'  component={CountryDetails}/>
+       <Route exact path='/details/:idVideogame'  component={CountryDetails}/>
        <Route exact path='/activities'  component={Activities}/>
     </div>
   );
